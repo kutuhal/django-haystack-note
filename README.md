@@ -14,10 +14,10 @@ Using Elasticsearch for implement search functionality in Django Website
 
 ### Open Issues
 
-- The previous and next link to retrieve other search results is not working because *has_previous* is always giving FALSE answer.
-- **_http://127.0.0.1:8000/search_** works while *http://127.0.0.1:8000* doesnt work which is based on the code in below reference.
+- The **Previous** and **Next** links to retrieve prior/latter search results is not working because *has_previous* is always returning FALSE. (see _templates/search/search.html_)
+- **_http://127.0.0.1:8000/search_** works as expected; while *http://127.0.0.1:8000* doesnt work - this is based on the *django-haystack-example* (see Reference).
 
 
 ### Reference
 - [Haystack Tutorial] (http://django-haystack.readthedocs.org/en/v2.4.1/tutorial.html#installation) 
-- http://nanvel.name/2013/07/django-haystack-example (after working through this realized that it is outdated and shouldnt have referred it :( )
+- [django-haystack-example](http://nanvel.name/2013/07/django-haystack-example) (after working through this realized that it is outdated and shouldnt have referred it :( )
